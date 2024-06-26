@@ -6,8 +6,8 @@ var logger = require('morgan');
 const multer = require('multer');
 const upload = multer({ dest: 'uploads/' });
 const cors = require('cors');
-const { addProjects, deleteUser, editField, login, getProjects, hideProject, sendMail } = require('./projectsController');
-const { authJwt } = require('./verifyJwt');
+const { addProjects, deleteUser, editField, login, getProjects, hideProject, sendMail } = require('../projectsController');
+const { authJwt } = require('../verifyJwt');
 require("dotenv").config();
 
 var app = express();
